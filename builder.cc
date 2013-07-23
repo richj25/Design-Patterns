@@ -35,6 +35,7 @@ public:
   virtual void getCheese() {}
   virtual void getBacon() {}
   virtual void serveBurger();
+  virtual ~Hamburger() {}
 private:
   bool bun;
   char patty;

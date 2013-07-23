@@ -6,6 +6,7 @@ class Hamburger
 {
 public:
   static Hamburger* newBurger(char choice);
+  virtual ~Hamburger() {}
   virtual void serve() = 0;
 };
 

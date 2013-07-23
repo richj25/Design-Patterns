@@ -3,6 +3,7 @@
 class Hamburger
 {
 public:
+  virtual ~Hamburger() {}
   virtual void serve() = 0;
 };
 
@@ -36,6 +37,7 @@ public:
 class BurgerFactory
 {
 public:
+  virtual ~BurgerFactory() {}
   virtual Hamburger* get_burger() = 0;
 };
 
