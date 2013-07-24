@@ -2,6 +2,7 @@ CC=/usr/bin/g++
 CFLAGS= -g 
 
 OBJS = abstract_factory      \
+       adapter               \
        builder               \
        external_polymorphism \
        factory               \
@@ -13,6 +14,9 @@ all: $(OBJS)
 
 abstract_factory: abstract_factory.cc
 	$(CC) $(CFLAGS) -o abstract_factory abstract_factory.cc
+
+adapter: adapter.cc
+	$(CC) $(CFLAGS) -o adapter adapter.cc
 
 builder: builder.cc
 	$(CC) $(CFLAGS) -o builder builder.cc
