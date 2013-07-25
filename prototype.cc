@@ -64,7 +64,6 @@ int main()
     std::cin >> choice;
   }
 
-  std::cout << "Choice = " << choice << std::endl;
   if (choice == '4') exit(0);
 
   burger = BurgerFactory::make_burger(atoi(&choice)); 

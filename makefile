@@ -3,6 +3,7 @@ CFLAGS= -g
 
 OBJS = abstract_factory      \
        adapter               \
+       bridge                \
        builder               \
        external_polymorphism \
        factory               \
@@ -17,6 +18,9 @@ abstract_factory: abstract_factory.cc
 
 adapter: adapter.cc
 	$(CC) $(CFLAGS) -o adapter adapter.cc
+
+bridge: bridge.cc
+	$(CC) $(CFLAGS) -o bridge bridge.cc
 
 builder: builder.cc
 	$(CC) $(CFLAGS) -o builder builder.cc
