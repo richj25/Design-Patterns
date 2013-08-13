@@ -9,7 +9,8 @@ OBJS = abstract_factory      \
        factory               \
        object_pool           \
        prototype             \
-       singleton 
+       singleton             \
+       strategy
 
 all: $(OBJS)
 
@@ -39,6 +40,9 @@ prototype: prototype.cc
 
 singleton: singleton.cc
 	$(CC) $(CFLAGS) -o singleton singleton.cc
+
+strategy: strategy.cc
+	$(CC) $(CFLAGS) -o strategy strategy.cc
 
 clean:
 	rm $(OBJS) 
