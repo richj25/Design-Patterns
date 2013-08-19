@@ -1,5 +1,5 @@
 CC=/usr/bin/g++
-CFLAGS= -g 
+CFLAGS= -g -std=c++11 
 
 OBJS = abstract_factory      \
        adapter               \
@@ -45,4 +45,4 @@ strategy: strategy.cc
 	$(CC) $(CFLAGS) -o strategy strategy.cc
 
 clean:
-	rm $(OBJS) 
+	rm $(OBJS) core* 

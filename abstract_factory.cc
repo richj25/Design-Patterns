@@ -100,4 +100,5 @@ int main()
   burger = factory->get_burger();
   burger->serve(); 
   delete(burger);
+  delete(factory);
 }

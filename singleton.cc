@@ -1,4 +1,5 @@
 #include <iostream>
+#include <atomic>
 
 using std::cout;
 using std::endl;
@@ -7,26 +8,24 @@ class StaticSingle {
 public:
   static StaticSingle& get_instance()
   {
-    static StaticSingle single;
+    static StaticSingle single(0,0);
     return single;
   }
 
 private:
-  StaticSingle();
+  StaticSingle(int m, int n): count1(m), count2(n){}
   StaticSingle(const StaticSingle& single);
   StaticSingle& operator=(const StaticSingle& rhs);
+  int count1, count2;
 };
 
-StaticSingle::StaticSingle()
-{
-  cout << "StaticSingle constructor" << endl;
-}
 
 class NewSingle {
 public:
   static NewSingle& get_instance(int x, int y);
   ~NewSingle();
-  int x,y;
+  std::atomic<int> x;
+  std::atomic<int> y;
 
 private:
   NewSingle(int x, int y);
