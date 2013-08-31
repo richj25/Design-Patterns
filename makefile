@@ -1,5 +1,5 @@
 CC=/usr/bin/g++
-CFLAGS= -g -std=c++11 
+CFLAGS= -g -std=c++11 -Wall
 
 OBJS = abstract_factory      \
        adapter               \
@@ -43,6 +43,9 @@ singleton: singleton.cc
 
 strategy: strategy.cc
 	$(CC) $(CFLAGS) -o strategy strategy.cc
+
+visitor: visitor.cc
+	$(CC) $(CFLAGS) -o visitor visitor.cc
 
 clean:
 	rm $(OBJS) core* 

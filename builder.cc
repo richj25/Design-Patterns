@@ -15,6 +15,7 @@ std::string returnCheeseString(char cheese)
     case '2' : return std::string("cheddar");
     case '3' : return std::string("american");
   }
+  return std::string("None");
 }
 
 std::string returnDonenessString(char doneness)
@@ -25,6 +26,7 @@ std::string returnDonenessString(char doneness)
     case '2' : return std::string("well done");
     case '3' : return std::string("medium");
   }
+  return std::string("None");
 }
 
 class Hamburger
