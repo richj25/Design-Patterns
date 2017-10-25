@@ -1,0 +1,3 @@
+The visitor pattern is a way to separate algorithms from data. The algorithm class (the visitor) knows what it wants to do with the data.
+The data class (the visitable) knows how to traverse the data. Neither needs to know what the other is doing. If we wish to add another 
+algorithm we need not change any of the data classes. If we wish to add another datatype we need not change the algorithm classes.
