@@ -11,7 +11,8 @@ OBJS = abstract_factory      \
        prototype             \
        singleton             \
        strategy              \
-       visitor
+       visitor               \
+       decorator
 
 all: $(OBJS)
 
@@ -29,6 +30,9 @@ builder: builder.cc
 
 external_polymorphism: external_polymorphism.cc
 	$(CC) $(CFLAGS) -o external_polymorphism external_polymorphism.cc
+	
+decorator: decorator.cc
+	$(CC) $(CFLAGS) -o decorator decorator.cc
 
 factory: factory.cc
 	$(CC) $(CFLAGS) -o factory factory.cc

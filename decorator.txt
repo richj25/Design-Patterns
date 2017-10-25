@@ -1,0 +1,5 @@
+The decorator pattern takes an object and creates and new, decorated object from the old with added features.
+In this implementation a pointer to the old object is a member of the new object and is initialized when the 
+new object is constructed. The old object is deleted using that member pointer when the new object is deleted.
+If we wish to keep the original object when the new, decorated object is deleted then we simply remove the
+deletion of the base object from the destructor of the decorator class.
