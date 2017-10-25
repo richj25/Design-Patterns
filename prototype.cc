@@ -13,21 +13,21 @@ class Mcdonalds : public Hamburger
 {
 public:
   Hamburger* clone() { return new Mcdonalds;}
-  void serve() {std::cout << "Here is your McDonalds hamurger" << std::endl;} 
+  void serve() {std::cout << "Here is your McDonalds hamburger" << std::endl;}
 };
 
 class Wendys : public Hamburger
 {
 public:
   Hamburger* clone() { return new Wendys;}
-  void serve() {std::cout << "Here is your Wendys hamurger" << std::endl;} 
+  void serve() {std::cout << "Here is your Wendys hamburger" << std::endl;}
 };
 
 class Burgerking : public Hamburger
 {
 public:
   Hamburger* clone() { return new Burgerking;}
-  void serve() {std::cout << "Here is your BurgerKing hamurger" << std::endl;} 
+  void serve() {std::cout << "Here is your BurgerKing hamburger" << std::endl;}
 };
 
 class BurgerFactory

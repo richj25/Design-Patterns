@@ -10,7 +10,8 @@ OBJS = abstract_factory      \
        object_pool           \
        prototype             \
        singleton             \
-       strategy
+       strategy              \
+       visitor
 
 all: $(OBJS)
 
@@ -48,4 +49,4 @@ visitor: visitor.cc
 	$(CC) $(CFLAGS) -o visitor visitor.cc
 
 clean:
-	rm $(OBJS) core* 
+	rm -f $(OBJS) core* 
